@@ -5,8 +5,6 @@ const cors = require('cors');
 const knex = require('knex');
 require('dotenv').config();
 
-// console.log(process.env);
-
 
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');

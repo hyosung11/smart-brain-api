@@ -3,6 +3,10 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
+require('dotenv').config();
+
+// console.log(process.env);
+
 
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
@@ -13,9 +17,9 @@ const db = knex({
   client: 'pg',
   connection: {
     host : '127.0.0.1',
-    user : 'aneagoie',
+    user : '',
     password : '',
-    database : 'smart-brain'
+    database : 'smart-brain1'
   }
 });
 

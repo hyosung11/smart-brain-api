@@ -18,3 +18,6 @@ You can grab Clarifai API key [here](https://www.clarifai.com/)
 - `docker ps`: see all containers that are currently running
 - `docker exec -it 699762a763a5 bash`: enter the container
 - `docker stop 699762a763a5`: stop the container
+
+## Port Binding & Port Forwarding
+- `docker run -it -p 3000:3000 superawesomecontainer`

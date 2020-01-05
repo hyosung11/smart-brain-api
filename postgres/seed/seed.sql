@@ -1,8 +1,7 @@
 BEGIN TRANSACTION;
 
-INSERT into users (name, email, entries, joined) values ('Jessie', 'jessie@gmail.com', 5, '2018-01-01');
+INSERT into users (name, email, entries, joined) values ('a', 'a@a.com', 5, '2018-01-01');
 
-INSERT into login (hash, email) values ('$2y$10$.Dk15yGYnPFFoqbbPZyQVelVMTwp/kwbXV1ateIK31NUdpD1B4NQ6
-', 'jessie@gmail.com');
+INSERT into login (hash, email) values ('$2a$10$WAK21U0Wl7C//jJ.DOB2uPP1DJQh7KUDgasdyQeGzkop2Pzl8W7u', 'a@a.com');
 
 COMMIT;
